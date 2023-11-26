@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Mario Jump</title>
+</head>
+<body>
+
+    <audio autoplay loop id="audioEsperando">
+        <source src="audios/audioEsperando.mp3" type="audio/mp3">
+    </audio>
+    <audio loop id="audioGameOver">
+        <source src="audios/audioGameOver.mp3" type="audio/mp3">
+    </audio>
+    <audio loop id="audioRodando">
+        <source src="audios/audioRodando.mp3" type="audio/mp3">
+    </audio>
+    <audio id="audioPulo">
+        <source src="audios/audioPulo.wav" type="audio/wav">
+    </audio>
+
+    <div class="container">
+        <img src="imagens/clouds.png" alt="imagens de 3 nuvens de jogo" class="nuvens">
+        <div class="cont">Time  : <span id="tempo">0</span></div>
+        <img src="imagens/sol.png" alt="" id="sol">
+        <img src="imagens/marioParado.png" alt="" class="mario">
+        <img src="imagens/mario.gif" alt="" class="marioGif">
+        <img src="imagens/pipe.png" alt="tubo verde pequeno" class="tubo">
+    </div>
+    <div class="chao"></div>
+    <p id="P">MÁRIO</p>
+    <p id="p">JUMP</p>
+    <button id="iniciar">Iniciar jogo</button>
+
+    <div class="gameOver">
+        <p id="p1">GAME</p>
+        <p id="p2">OVER</p>
+        <div id="contF1">Time: <span id="contF2">0</span></div>
+        <button onclick = "reiniciarJogo()"id="reiniciar">Jogar novamente</button>
+    </div>
+
+    <script src="js/script.js"></script>
+</body>
+</html>

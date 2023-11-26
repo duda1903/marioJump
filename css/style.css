@@ -1,0 +1,192 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Press Start 2P', sans-serif;
+}
+
+.container{
+    width: 100vw;
+    height: 90vh;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(#87ceeb, #e0f6ff);
+    filter: blur(5px);
+}
+
+.chao{
+    width: 100vw;
+    height: 10vh;
+    background: linear-gradient(to top, #8B4513, #916d14, #00FF00, #0ea00e);
+    filter: blur(5px);
+}
+
+.cont{
+    margin-top: 1%;
+    margin-left: 1%;
+    position: absolute;
+    font-size: 20px;
+    color: #f0f0f0;
+}
+
+#sol{
+    position: absolute;
+    width: 265px;
+    left: 88%;
+    top: -5%;
+}
+
+#p{
+    position: absolute;
+    bottom: 52%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color:black;
+    font-size: 70px;
+}
+
+#P{
+    position: absolute;
+    bottom: 60%;
+    left: 51%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 70px;
+}
+
+#iniciar{
+    display: block;
+    position: absolute;
+    top:50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 10px 20px;
+    font-size: 20px;
+    background: #fe0016;
+    color: #f0f0f0;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.tubo{
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    right: -80px;
+}
+
+.mario{
+    width: 150px;
+    position: absolute;
+    bottom: -8px;
+}
+
+.marioGif{
+    width: 150px;
+    position: absolute;
+    bottom: 0;
+    display: none;
+}
+
+.jump{
+    animation: pulo-mario 750ms  ease-out;
+}
+
+.nuvens{
+    margin-top: 1%;
+    width: 500px;
+    position: absolute;
+    right: -500px;
+}
+
+.gameOver{
+    display: none;
+}
+
+#p1{
+    position: absolute;
+    bottom: 60%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: black;
+    font-size: 70px;
+}
+
+#p2{
+    position: absolute;
+    bottom: 52%;
+    left: 50%;
+    transform: translate(-50%, -42%);
+    color:black;
+    font-size: 70px;
+}
+
+#reiniciar{
+    position: absolute;
+    bottom: 40%;
+    left: 42%;
+    padding: 13px 20px;
+    font-size: 17px;
+    color: #f0f0f0;
+    background-color: #fe0016;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#contF1{
+    position: absolute;
+    margin-top: -26%;
+    margin-left: 46%;
+    color: #fe0016;
+}
+
+.contF2{
+    color: #fe0016;
+}
+
+@keyframes animacao-tubo {
+    from{
+        right: 0;
+    }
+
+    to{
+        right: 100%;
+    }
+}
+
+@keyframes pulo-mario {
+    0%{
+        bottom: 0;
+    }
+
+    40%{
+        bottom:120px;
+    }
+
+    50%{
+        bottom: 120px;
+    }
+
+    60%{
+        bottom: 120px;
+    }
+
+    100%{
+        bottom: 0;
+    }
+}
+
+@keyframes animacao-nuvens {
+    from {
+        right: -550px;
+    }
+
+    to{
+        right: 100%;
+    }
+
+}
